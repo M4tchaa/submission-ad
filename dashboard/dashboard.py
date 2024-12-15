@@ -74,7 +74,7 @@ st.header(f"Total Orders: {total_orders:,.0f}")
 # Total Weather Group Analysis
 st.subheader("Total Bike Rentals by Weather Condition")
 fig, ax = plt.subplots(figsize=(8, 6))
-bars = ax.bar(total_weather_group_data.index, total_weather_group_data.values, color=['skyblue', 'orange', 'red', 'black'])
+bars = ax.bar(total_weather_group_data.index, total_weather_group_data.values, color=['skyblue'])
 
 for bar in bars:
     yval = bar.get_height()
@@ -97,7 +97,7 @@ st.pyplot(fig)
 # Weather Group Analysis
 st.subheader("Bike Rentals by Weather Condition")
 fig, ax = plt.subplots()
-weather_group_data.plot(kind='bar', color=['skyblue', 'orange', 'red', 'black'], ax=ax)
+weather_group_data.plot(kind='bar', ax=ax)
 ax.set_title('Average Bike Rentals by Weather Condition')
 ax.set_xlabel('Weather Condition')
 ax.set_ylabel('Average Rentals')
