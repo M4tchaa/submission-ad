@@ -28,7 +28,7 @@ def create_hourly_rentals_data(df):
 
 
 # Load Data
-bike_data = pd.read_csv("main_data.csv")
+bike_data = pd.read_csv("dashboard/main_data.csv")
 
 # Data Preparation
 bike_data["dteday"] = pd.to_datetime(bike_data["dteday"])
@@ -45,7 +45,7 @@ min_date = bike_data["dteday"].min()
 max_date = bike_data["dteday"].max()
 
 with st.sidebar:
-    st.image("logo.jpg")
+    st.image("dashboard/logo.jpg")
     start_date, end_date = st.date_input(
         label="Rentang Waktu",
         min_value=min_date,
