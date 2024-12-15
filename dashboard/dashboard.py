@@ -89,7 +89,7 @@ for bar in bars:
 
 ax.set_title('Total Bike Rentals by Weather Condition', fontsize=14, fontweight='bold')
 ax.set_xlabel('Weather Condition', fontsize=12)
-ax.set_ylabel('Total Rentals', fontsize=12)
+ax.set_ylabel('Total Rentals(Millions)', fontsize=12)
 ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
 st.pyplot(fig)
@@ -128,7 +128,7 @@ for bar in bars:
 
 ax.set_title('Total Bike Rentals by Season', fontsize=14, fontweight='bold')
 ax.set_xlabel('Season', fontsize=12)
-ax.set_ylabel('Total Rentals', fontsize=12)
+ax.set_ylabel('Total Rentals (Millions)', fontsize=12)
 ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
 st.pyplot(fig)
